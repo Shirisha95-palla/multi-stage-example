@@ -2,13 +2,12 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'manikiran7/multi-stage-example'
+        DOCKER_IMAGE = 'shirisha2018/amazonlinux-nginx'
         TAG = 'v0.0.1'
     }
 
     tools {
-        maven 'Maven3'       // Configure Maven in Jenkins Global Tools
-        jdk 'Java21'          // Optional: If not using JDK inside container
+        maven 'maven3'       // Configure Maven in Jenkins Global Tools
     }
 
     stages {
